@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Editz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js"></script>
+
+</head>
+<body>
+    <header><h1>Editz</h1></header>
+    <input type='file' style="display: flex;justify-content: center;" id="fl" onclick="strt()"/>
+    <img src=""  id="img" width="1350px" height="650px" style="display: none;z-index: -1;">
+    
+    
+    <div class="edit">
+        <h3 style="color: white;">Edit</h3>
+        <p style="position: relative;">Width</p>
+        <input type="range" name="" min="0" max="1400" id="width" class="rg">
+        <p style="position: relative;">Height</p>
+        <input type="range" name="" min="0" max="650" id="height" class="rg">
+        <button onclick="sv()">Apply</button>
+        <p>Grayscale</p>
+        <input type="range" min="0" max="100" id="g" class="rg" value="20">
+        <button onclick="grayscale()">Apply</button>
+        <p>Contrast</p>
+        <input type="range" min="0" max="100" id="c" class="rg">
+        <button onclick="contrast()">Apply</button>
+        <p>Brightness</p>
+        <input type="range" min="0" max="300" id="b" class="rg">
+        <button onclick="brightness()">Apply</buttton>
+        <p class="bw">Black and White</p>
+        <button onclick="gr()" style="position: relative;" id="gr">On</button>
+        <button onclick="groff()" style="position: relative;" id="gr-off">Off</button>
+        <p class="bor">Vertical or Horizontal</p>
+        <button id="vertical" onclick="vr()">Vertical</button>
+        <button id="horizontal" onclick="hr()">Horizontal</button>
+        <div class="b">
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
